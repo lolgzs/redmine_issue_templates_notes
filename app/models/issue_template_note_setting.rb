@@ -5,7 +5,7 @@ class IssueTemplateNoteSetting < ActiveRecord::Base
 
   validates :user_auth, :presence => true, :if => :user_auth?
 
-  serialize :user_auth, Array
+  serialize :user_auth, type: Array
 
 
 end
